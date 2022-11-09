@@ -1,0 +1,11 @@
+name: CI_SameOrg_PvtAction_OrgAccess
+
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: actions/checkout@v2
+    - uses: new-action-flow-test-org-1/addash-private-action-org-access@main
